@@ -53,51 +53,55 @@ namespace Loops
             Console.WriteLine("\n\t***********************************");
             Console.Write("\n ");
 
+            // Display GoodBye Message
             Console.WriteLine("\n\tHOPE YOU ENJOYED LOOPS!");
 
             Console.ReadLine();
 
         }
-
+        // A for loop which displays every third number beginning with ten and continuing 
+        // to 100, inclusive of 10 and 100.
         public static void forLoop()
         {
-            int start = 1;
-            int stop = 100;
+            int startLoop = 1;
+            int stopLoop = 100;
 
-            for (; start <= stop; start += 3)
+            for (; startLoop <= stopLoop; startLoop += 3)
             {
                 Console.Write("\n\t ");
-                Console.WriteLine(start);
+                Console.WriteLine(startLoop);
             }
         }
-
+        // A while loop which displays every third number beginning with ten and
+        // continuing to 100, inclusive of 10 and 100.
         public static void whileLoop() 
         {
-            int start = 10;
-            int stop = 100;
+            int startLoop = 10;
+            int stopLoop = 100;
 
-            while (start <= stop)
+            while (startLoop <= stopLoop)
             {
                 Console.Write("\n\t ");
-                Console.WriteLine(start);
+                Console.WriteLine(startLoop);
 
-                start = start + 3;
+                startLoop = startLoop + 3;
             }
         }
-
+        // A do-while loop which displays every third number beginning with ten and continuing 
+        // to 100, inclusive of 10 and 100.
         public static void doWhileLoop()
         {
 
-            int start = 10;
+            int startLoop = 10;
 
             do
             {
                 Console.Write("\n\t ");
-                Console.WriteLine(start);
+                Console.WriteLine(startLoop);
 
-                start = start + 3;
+                startLoop = startLoop + 3;
 
-            } while (start <= 100);
+            } while (startLoop <= 100);
 
         }
     }
